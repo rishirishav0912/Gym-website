@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RR's GYM & FITNESS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&family=Courgette&family=Lobster+Two&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-image: url('background.jpg');
+            background-size:100%;
+        }
+        .left{
+            color:#3c0909;
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 4px;
+            left:0px;
+            padding: 14px 23px;
+            text-align: center;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-size: 120%;
+        }
+        .left img{
+            width: 40px;
+        }
+        .mid{
+            color:white;
+            /* border: 2px solid green; */
+            display:block;
+            width: 40%;
+            margin: 40px auto;
+            text-align: center;
+            font-size: 125%;
+        }
+        .mid li{
+            display: inline-block;
+            padding:0px 30px;
+        }
+        .mid li a{
+            color: #3c0909;
+            font-family: 'Baloo Bhai 2', cursive;
+            text-decoration: none;
+        }
+        .mid li a:hover{  /*, .mid li a.active */
+            background-color:rgb(90, 83, 97);
+            color: antiquewhite;
+            border-radius: 10px;
+        }
+        .right{
+            color:white;
+            /* border: 2px solid blue; */
+            display: inline-block;
+            position: absolute;
+            top: 40px;
+            right: 0px;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        .container{
+            /* border: 2px solid black; */
+            display: inline-block;
+            width: 500px;
+            height: 200px;
+            text-align: center;
+        }
+        .container #first{
+            font-size: 225%;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        .container #second,#third{
+            font-size: 325%;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        .container #second  b{
+            color: rgb(82, 27, 6);
+        }
+        .container #third c{
+            color: rgb(82, 27, 6);
+        }
+        .request{
+            /* border: 2px solid white; */
+            width: 500px;
+            height: 60px;
+            text-align: center;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-size: 325%;
+            color: rgb(207, 205, 203);
+        }
+        .form{
+            /* border: 2px solid white; */
+            left: 50px;
+            width: 500px;
+            height: 260px;
+        }
+        #txt,#num,#eml{
+            background-color: rgb(36, 2, 2);
+            width: 450px;
+            height: 40px;
+            margin: 13px;
+            text-align: center;
+            color: antiquewhite;
+            font-size: 150%;
+            font-family: 'Baloo Bhai 2', cursive;
+            border-radius: 10px;
+        }
+        #smb,#rst{
+            width: 225px;
+            height: 40px;
+            position: relative;
+            left: 15px;
+            background-color: rgb(36, 2, 2);
+            color: antiquewhite;
+            font-size: 150%;
+            font-family: 'Baloo Bhai 2', cursive;
+            border-radius: 10px;
+        }
+        .btn{
+            background-color: rgb(75, 69, 81);
+            padding:10px;
+            font-family: 'Baloo Bhai 2', cursive;
+            border-radius: 10px;
+        }
+        .btn:hover{
+            cursor: pointer;
+            background-color: antiquewhite;
+            color:rgb(90, 83, 97);
+            font-size: 90%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <img src="logo.jfif" alt="">
+            <div>Rishi's Fitness</div>
+        </div>
+        <div class="mid">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Our Team</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div id="first">
+                shape your body
+            </div>
+            <div id="second">Be <b>Strong</b></div>
+            <div id="third">Train <c>Hard</c></div>
+        </div>
+        <form action="backend.php">
+            <div class="request">Join Us Now!</div>
+            <div class="form">
+                <input type="text" placeholder="Provide Your Name" id="txt">
+                <input type="number" placeholder="Provide Your Contact No." id="num">
+                <input type="email" placeholder="Provide Your Email" id="eml">
+                <input type="submit" id="smb">
+                <input type="reset" id="rst">
+            </div>
+        </form>
+        <div class="right">
+            <button class="btn">Contact Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+
+</body>
+</html>
